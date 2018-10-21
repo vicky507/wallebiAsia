@@ -1,0 +1,43 @@
+{
+  "name": "wallebiproject",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.7.2",
+    "express": "^4.16.3",
+    "form-data": "^2.3.2",
+    "history": "^4.7.2",
+    "path": "^0.12.7",
+    "react": "^16.4.1",
+    "react-chartjs-2": "^2.7.4",
+    "react-date-picker": "^6.11.2",
+    "react-dom": "^16.4.1",
+    "react-images-upload": "^1.2.0",
+    "react-phone-code": "0.0.3",
+    "react-rangeslider": "^2.2.0",
+    "react-redux": "^5.0.7",
+    "react-responsive-modal": "^3.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run react' 'npm run server'",
+    "react": "react-scripts start",
+    "server": "nodemon src/server/app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.2"
+  }
+}
